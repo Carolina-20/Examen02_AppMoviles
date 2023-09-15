@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crud.ModificarModeloActv">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_title_modeloAutos"
+        android:layout_width="414dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="124dp"
+            android:text="App Marcas-Autos"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ib_go_back_update_modeloAutos_to_modeloAutos_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_go_back_update_modeloAutos_to_modeloAutos_list"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_form_update_modeloAutos"
+        android:layout_width="335dp"
+        android:layout_height="626dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="49dp"
+        android:background="@color/primario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/pt_modeloAutos_update_fechaLanzamiento"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Fecha de lanzamiento (aaaa-mm-dd)"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/pt_modeloAutos_update_fuerzaMotor"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/pt_modeloAutos_update_fuerzaMotor"
+            app:layout_constraintTop_toBottomOf="@+id/pt_modeloAutos_update_fuerzaMotor" />
+
+        <EditText
+            android:id="@+id/pt_modeloAutos_update_unidadesDisponibles"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Unidades disponibles"
+            android:inputType="numberSigned"
+            app:layout_constraintEnd_toEndOf="@+id/pt_modeloAutos_update_fechaLanzamiento"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pt_modeloAutos_update_fechaLanzamiento"
+            app:layout_constraintTop_toBottomOf="@+id/pt_modeloAutos_update_fechaLanzamiento" />
+
+        <EditText
+            android:id="@+id/pt_modeloAutos_update_fuerzaMotor"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Fuerza motor"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/pt_modeloAutos_update_precio"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/pt_modeloAutos_update_precio"
+            app:layout_constraintTop_toBottomOf="@+id/pt_modeloAutos_update_precio" />
+
+        <EditText
+            android:id="@+id/pt_modeloAutos_update_precio"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/pt_modeloAutos_update_nombreMod"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/pt_modeloAutos_update_nombreMod"
+            app:layout_constraintTop_toBottomOf="@+id/pt_modeloAutos_update_nombreMod" />
+
+        <EditText
+            android:id="@+id/pt_modeloAutos_update_nombreMod"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="38dp"
+            android:backgroundTint="#050C32"
+            android:ems="10"
+            android:fontFamily="@font/antic"
+            android:inputType="text"
+            android:hint="Nombre del modelo"
+            android:textAllCaps="false"
+            android:textColor="#140339"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pt_marca_nombre"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#050C32"
+            android:ems="10"
+            android:fontFamily="@font/antic"
+            android:inputType="text"
+            android:text="Marca del modelo"
+            android:textAllCaps="false"
+            android:textColor="#140339"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_is_sedan_modeloAutos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner_is_sedan_modeloAutos"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_is_sedan_modeloAutos" />
+
+        <Button
+            android:id="@+id/btn_update_modeloAutos"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="46dp"
+            android:background="@color/background_color"
+            android:text="Guardar"
+            app:iconTint="@color/background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pt_marca_nombre"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/spinner_is_sedan_modeloAutos"
+            android:layout_width="251dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="¿Es sedan?"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pt_modeloAutos_update_unidadesDisponibles"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pt_modeloAutos_update_unidadesDisponibles"
+            app:layout_constraintTop_toBottomOf="@+id/pt_modeloAutos_update_unidadesDisponibles" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="69dp"
+        android:fontFamily="@font/antic"
+        android:text="Modificar modelo"
+        android:textColor="@color/background_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_form_update_modeloAutos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_title_modeloAutos" />
+</androidx.constraintlayout.widget.ConstraintLayout>

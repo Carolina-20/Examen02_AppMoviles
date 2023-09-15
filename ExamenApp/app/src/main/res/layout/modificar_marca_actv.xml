@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crud.ModificarMarcaActv">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".crud.CrearMarcaActv">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="119dp"
+            android:text="Modificar marca"
+            android:textColor="@color/background_color"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_title"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_title"
+            android:layout_width="426dp"
+            android:layout_height="71dp"
+            android:background="@color/background_color"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="136dp"
+                android:text="App Marcas-Autos"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_go_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_form_update_marca"
+            android:layout_width="336dp"
+            android:layout_height="443dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="65dp"
+            android:background="@color/primario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/btn_update_marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="115dp"
+                android:text="Guardar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_marca_update_concesionarios"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/txt_marca_update_concesionarios"
+                android:layout_width="251dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="23dp"
+                android:backgroundTint="#050C32"
+                android:ems="10"
+                android:fontFamily="@font/antic"
+                android:inputType="text"
+                android:text="# de concesionarios en la ciudad"
+                android:textAllCaps="false"
+                android:textColor="#140339"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/txt_marca_update_ciudad"
+                app:layout_constraintStart_toStartOf="@+id/txt_marca_update_ciudad"
+                app:layout_constraintTop_toBottomOf="@+id/txt_marca_update_ciudad" />
+
+            <EditText
+                android:id="@+id/txt_marca_update_ciudad"
+                android:layout_width="251dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="#050C32"
+                android:ems="10"
+                android:fontFamily="@font/antic"
+                android:inputType="text"
+                android:text="Ciudad de matriz"
+                android:textAllCaps="false"
+                android:textColor="#140339"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/txt_marca_update_pais"
+                app:layout_constraintStart_toStartOf="@+id/txt_marca_update_pais"
+                app:layout_constraintTop_toBottomOf="@+id/txt_marca_update_pais" />
+
+            <EditText
+                android:id="@+id/txt_marca_update_pais"
+                android:layout_width="251dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#050C32"
+                android:ems="10"
+                android:fontFamily="@font/antic"
+                android:inputType="text"
+                android:text="Pais de origen"
+                android:textAllCaps="false"
+                android:textColor="#140339"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/txt_marca_update_name"
+                app:layout_constraintStart_toStartOf="@+id/txt_marca_update_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_marca_update_name" />
+
+            <EditText
+                android:id="@+id/txt_marca_update_name"
+                android:layout_width="251dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="42dp"
+                android:backgroundTint="#050C32"
+                android:ems="10"
+                android:fontFamily="@font/antic"
+                android:inputType="text"
+                android:text="Nombre de la marca"
+                android:textAllCaps="false"
+                android:textColor="#140339"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

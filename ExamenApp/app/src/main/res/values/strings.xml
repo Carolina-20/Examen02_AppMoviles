@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExamenApp</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="create_marca_button">Crear</string>
+    <string name="create_marca_title">Nueva marca </string>
+    <string name="update_marca_title">Modificar marca</string>
+
+    <string name="create_modeloAutos_title">Nuevo Modelo</string>
+    <string name="update_modeloAutos_title">Modificar modelo</string>
+
+    <string name="menu_mis_modelos">Ver </string>
+    <string name="menu_delete">Eliminar</string>
+    <string name="menu_update">Editar</string>
+</resources>
